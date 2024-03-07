@@ -1,38 +1,239 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #333;
+  color: #fff;
+  overflow-x: hidden;
+  transition: width 0.3s ease;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px 20px; /* Adjust padding as needed */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.navleft {
+  margin-right: 20px; /* Adjust margin for spacing */
+}
+
+.navleft:last-child {
+  margin-right: 0; /* No margin for the last element */
+}
+
+.navleft a {
   color: white;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.navright {
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navright {
+  color: white;
+  font-size: 20px;
+}
+.nav-icon {
+  color: white;
+  font-size: 20px;
+}
+
+.route-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 24px;
+  margin: 0;
+}
+
+.bars {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.search {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+}
+
+.search-logo {
+  margin-right: 10px;
+}
+
+.routes {
+  padding: 20px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+}
+/* .link.active {
+  font-weight: bold;
+} */
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding as needed */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.navleft {
+  margin-right: 20px; /* Adjust margin for spacing */
+}
+
+.navleft:last-child {
+  margin-right: 0; /* No margin for the last element */
+}
+
+.navleft a {
+  color: white;
+  text-decoration: none;
+}
+
+.navright {
+  list-style: none;
+}
+
+.navright {
+  color: white;
+  font-size: 20px;
+}
+.nav-icon {
+  color: white;
+  font-size: 20px;
+}
+
+.route-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 24px;
+  margin: 0;
+}
+
+.bars {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.search {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+}
+
+.search-logo {
+  margin-right: 10px;
+}
+
+.routes {
+  padding: 20px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.link-text {
+  display: none;
+}
+
+/* Main Content Area */
+.action {
+  display: flex;
+  margin-left: 25%; 
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.action.open {
+  margin-left: 10%; /* Adjusted margin when sidebar is open */
+}
+.main-wrapper {
+  display: flex;
+  
+}
+
+.right-navigation-wrapper {
+  flex: 1;
+  /* border: none; */
 }

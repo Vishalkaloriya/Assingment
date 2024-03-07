@@ -1,0 +1,24 @@
+.page3-container {
+  display: flex;
+  flex-direction: row;
+  gap: 600px; /* Adjust the gap between each div */
+
+}
+
+.page3-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust the gap between h1, icon, and p */
+}
+
+.page3-item h1,
+.page3-item p {
+  margin: 0; /* Remove default margins */
+}
+
+.right-navigation-container {
+  display: flex;
+  /* justify-content: flex-end; */
+  justify-content: flex-end; /* Align to the right end of the container */
+  flex-grow: 1; /* Take up remaining space */
+}

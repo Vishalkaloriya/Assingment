@@ -1,0 +1,45 @@
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    z-index: 1000;
+  }
+  
+  .menu-open {
+    height: 100vh;
+    transition: height 0.3s ease;
+  }
+  
+  .navleft {
+    margin-right: 20px; 
+  }
+  
+  .navleft:last-child {
+    margin-right: 0;
+  }
+  
+  .navleft a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navright {
+    list-style: none;
+  }
+  
+  .navright {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .nav-icon {
+    color: white;
+    font-size: 20px;
+  }
+  
