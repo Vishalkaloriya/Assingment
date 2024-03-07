@@ -1,7 +1,7 @@
 .page3-container {
   display: flex;
   flex-direction: row;
-  gap: 600px; /* Adjust the gap between each div */
+  gap: 500px; /* Adjust the gap between each div */
 
 }
 

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { DiAndroid } from "react-icons/di";
+import { FaLink } from "react-icons/fa";
+import { IoArrowForwardCircleOutline } from "react-icons/io5";
+import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import "./page3.css";
 import { FaBars } from "react-icons/fa";
 import Rightnavigation from "../components/Rightnavigation";
@@ -21,17 +23,17 @@ const Page3 = () => {
     // Fill this array with your actual data
     {
       title: "ellipse",
-      icon: <DiAndroid size={40} />,
+      icon: <IoChatboxEllipsesOutline size={40} />,
       desc: "Description of ellipse",
     },
     {
       title: "Link Filter",
-      icon: <DiAndroid size={40} />,
+      icon: <FaLink size={40} />,
       desc: "Description of Link Filter",
     },
     {
       title: "Forward",
-      icon: <DiAndroid size={40} />,
+      icon: <IoArrowForwardCircleOutline size={40} />,
       desc: "Description of Forward",
     },
     {

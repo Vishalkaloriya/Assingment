@@ -1,14 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { MdPrint } from "react-icons/md";
-import Sidebar from "./Sidebar"; // Import the Sidebar component
+import Sidebar from "./Sidebar";
 
 const Header = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const mainContentRef = useRef(null);
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
+  };
+
+  const handlePrint = () => {
+    setSidebarOpen(false); // Hide the sidebar before printing
+    setTimeout(() => {
+      window.print();
+      setSidebarOpen(true); // Show the sidebar after printing
+    }, 500);
   };
 
   return (
@@ -27,11 +36,13 @@ const Header = () => {
         </div>
         <div className="items">
           <li className="navright">
-            <MdPrint className="nav-icon" />
+            <MdPrint className="nav-icon" onClick={handlePrint} />
           </li>
         </div>
       </nav>
-      <Sidebar isOpen={sidebarOpen} />
+      <div ref={mainContentRef}>
+        <Sidebar isOpen={sidebarOpen} mainContentRef={mainContentRef} />
+      </div>
     </>
   );
 };
