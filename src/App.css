@@ -23,16 +23,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px; /* Adjust padding as needed */
-  z-index: 1000; /* Ensure it's above other content */
+  padding: 10px 20px; 
+  z-index: 1000; 
 }
 
 .navleft {
-  margin-right: 20px; /* Adjust margin for spacing */
+  margin-right: 20px; 
 }
 
 .navleft:last-child {
-  margin-right: 0; /* No margin for the last element */
+  margin-right: 0; 
 }
 
 .navleft a {
@@ -120,16 +120,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px; /* Adjust padding as needed */
-  z-index: 1000; /* Ensure it's above other content */
+  padding: 10px 20px;
+  z-index: 1000; 
 }
 
 .navleft {
-  margin-right: 20px; /* Adjust margin for spacing */
+  margin-right: 20px; 
 }
 
 .navleft:last-child {
-  margin-right: 0; /* No margin for the last element */
+  margin-right: 0; 
 }
 
 .navleft a {
@@ -226,7 +226,7 @@
 }
 
 .action.open {
-  margin-left: 10%; /* Adjusted margin when sidebar is open */
+  margin-left: 10%; 
 }
 .main-wrapper {
   display: flex;

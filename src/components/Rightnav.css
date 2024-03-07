@@ -1,8 +1,7 @@
-/* rightnavbar.css */
 
 .right-nav {
-    position: fixed; /* Add this line */
-    right: 0; /* Add this line */
+    position: fixed; 
+    right: 0; 
     background-color: #ffffff;
     border-radius: 5px;
     padding: 10px;
@@ -23,16 +22,16 @@
   
   .icon-container {
     display: inline-block;
-    margin-left: 10px; /* Adjust margin as needed */
+    margin-left: 10px; 
     cursor: pointer;
   }
   
   .icon-box {
     display: inline-block;
-    width: 20px; /* Adjust width as needed */
-    height: 20px; /* Adjust height as needed */
-    background-color: #f0f0f0; /* Background color of the box */
-    border-radius: 4px; /* Adjust border-radius as needed */
+    width: 20px; 
+    height: 20px; 
+    background-color: #f0f0f0; 
+    border-radius: 4px; 
   }
   
   .icon {
@@ -44,7 +43,7 @@
   }
   
   .child-container {
-    margin-left: 20px; /* Adjust margin as needed */
+    margin-left: 20px; 
   }
   
   .child-link {

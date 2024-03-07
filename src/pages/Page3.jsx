@@ -20,7 +20,6 @@ const Page3 = () => {
   };
 
   const items = [
-    // Fill this array with your actual data
     {
       title: "ellipse",
       icon: <IoChatboxEllipsesOutline size={40} />,
@@ -41,7 +40,7 @@ const Page3 = () => {
       icon: <FaBars size={40} />,
       desc: "Description of Hamburger",
     },
-    // ...
+    
   ];
 
   return (
