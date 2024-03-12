@@ -48,8 +48,8 @@ const Sidebar = ({ isOpen, children }) => {
         >
           <div className="top-section"></div>
           <section className="routes">
-            {routes.map((route, index) => (
-              <div key={index}>
+            {routes.map((route) => (
+              <div key={route.id || route.path}> {/* Use a unique identifier as the key */}
                 <div className="route-container">
                   <NavLink
                     to={route.path}
@@ -75,8 +75,8 @@ const Sidebar = ({ isOpen, children }) => {
                 </div>
                 {route.child && isRouteExpanded(route.name) && (
                   <div>
-                    {route.child.map((child, index) => (
-                      <div key={index}>
+                    {route.child.map((child) => (
+                      <div key={child.id || child.path}> {/* Use a unique identifier as the key */}
                         <div className="route-container">
                           <NavLink
                             to={child.path}
@@ -106,8 +106,8 @@ const Sidebar = ({ isOpen, children }) => {
                         </div>
                         {child.child && isRouteExpanded(child.name) && (
                           <div>
-                            {child.child.map((subChild, subIndex) => (
-                              <div key={subIndex}>
+                            {child.child.map((subChild) => (
+                              <div key={subChild.id || subChild.path}> {/* Use a unique identifier as the key */}
                                 <div className="route-container">
                                   <NavLink
                                     to={subChild.path}
@@ -139,8 +139,8 @@ const Sidebar = ({ isOpen, children }) => {
                                   isRouteExpanded(subChild.name) && (
                                     <div>
                                       {subChild.child.map(
-                                        (subSubChild, subSubIndex) => (
-                                          <div key={subSubIndex}>
+                                        (subSubChild) => (
+                                          <div key={subSubChild.id || subSubChild.path}> {/* Use a unique identifier as the key */}
                                             <NavLink
                                               to={subSubChild.path}
                                               className="link"
